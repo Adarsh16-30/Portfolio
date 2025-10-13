@@ -64,14 +64,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-              © {currentYear} Adarsh Tripathi. Built with 
-              <motion.span
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <Heart className="w-4 h-4 text-primary fill-primary" />
-              </motion.span>
-              and React
+              © {currentYear} Built by Adarsh Tripathi
             </p>
           </motion.div>
         </div>
