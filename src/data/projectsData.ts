@@ -36,6 +36,15 @@ export const projectsData = [
     githubUrl: "https://github.com/Adarsh16-30/",
     demoUrl: "#"
   },
+  {
+    title: "Portfolio",
+    description: "Designed and developed a fully responsive personal portfolio website using modern front-end technologies, showcasing projects, skills, and achievements through an interactive and elegant interface. Implemented smooth animations with Framer Motion and optimized performance using Vite and TypeScript for fast, efficient, and maintainable development.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion", "React Router DOM"],
+    year: "2025",
+    gradient: "from-blue-500/10 to-sapphire-500/10",
+    githubUrl: "https://github.com/Adarsh16-30/Portfolio",
+    demoUrl: "#"
+  },
   // Add more projects below
 ];
 
