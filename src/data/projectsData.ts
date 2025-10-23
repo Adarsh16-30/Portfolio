@@ -45,6 +45,15 @@ export const projectsData = [
     githubUrl: "https://github.com/Adarsh16-30/Portfolio",
     demoUrl: "#"
   },
+  {
+    title: "PatientReportAnalysis",
+    description: "Developed an AI-powered Python application to analyze medical patient data from flat JSON or FHIR bundles. Implemented multiple agents using LangChain and local LLMs (via Ollama) to deliver actionable health advice, risk predictions, and educational tips. Created both an interactive Streamlit web UI for file uploads and a CLI for batch processing.",
+    tech: ["Python", "LangChain", "Ollama", "Streamlit"],
+    year: "2025",
+    gradient: "from-yellow-500/10 to-emerald-500/10",
+    githubUrl: "https://github.com/Adarsh16-30/PatientReportAnalysis",
+    demoUrl: "#"
+  },
   // Add more projects below
 ];
 
