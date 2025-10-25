@@ -59,7 +59,7 @@ export const projectsData = [
     description: "Built a powerful CLI tool supporting multiple modules for GitHub automation, Hugging Face model deployment, file management, and system utilities. Streamlined developer workflows with commands for creating repositories, managing issues, uploading files, and interacting with AI models. Designed with a modular architecture for scalability, automation, and seamless integration across platforms.",
     tech: ["Node.js", "JavaScript", "Hugging Face API", "GitHub API"],
     year: "2025",
-    gradient: "from-black-500/10 to-white-500/10",
+    gradient: "from-yellow-500/10 to-green-500/10",
     githubUrl: "https://github.com/Adarsh16-30/CommandLineInterface",
     demoUrl: "#"
   },
