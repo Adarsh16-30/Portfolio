@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const stats = [
-    { icon: GraduationCap, label: "CGPA", value: "8.93" },
+    { icon: GraduationCap, label: "CGPA", value: "8.96" },
     { icon: Award, label: "Certifications", value: "5+" },
     { icon: Globe, label: "Languages", value: "4" },
   ];
