@@ -23,17 +23,17 @@ export const certificatesData = [
   {
     title: "Machine Learning",
     issuer: "DeepLearning.AI - Coursera",
-    date: "2024",
+    date: "2025",
     description: "Completed a comprehensive course covering fundamental machine learning concepts, model building, and evaluation. Gained practical experience with supervised and unsupervised learning, regression, classification, neural networks, feature engineering, and implementation using Python.",
     skills: ["Python", "NumPy", "Pandas", "Scikit-learn", "Neural Networks"],
-    certificateUrl: "https://drive.google.com/drive/folders/1nHtCLhuD1q8Z4-tmQJ9JDLmUpNoLawjF?usp=sharing",
+    certificateUrl: "https://drive.google.com/file/d/1R2_7gNWiFC2KSKefWHUFrokdhNTcAv9M/view?usp=sharing",
     icon: "Brain",
     color: "from-purple-500 to-pink-500"
   },
   {
     title: "Google Cybersecurity Professional Certificate",
     issuer: "Google - Coursera",
-    date: "2024 - Ongoing",
+    date: "2025 - Ongoing",
     description: "Currently pursuing a professional certification focused on foundational cybersecurity concepts, threat analysis, and security best practices. Completed courses covering network security fundamentals, threat detection and mitigation, Linux and SQL basics, and security tools like SIEM and firewalls.",
     skills: ["Network Security", "Threat Detection", "Linux", "SQL", "SIEM", "Firewalls"],
     icon: "Shield",
@@ -42,7 +42,7 @@ export const certificatesData = [
   {
     title: "OCI Generative AI Professional Certificate",
     issuer: "Oracle",
-    date: "2024",
+    date: "2025",
     description: "Completed a professional certification focused on the end-to-end lifecycle of enterprise-grade Generative AI applications using Oracle Cloud Infrastructure (OCI). Gained hands-on expertise in Large Language Models (LLMs), prompt engineering techniques, model fine-tuning with custom data, and building applications using the OCI Generative AI service.",
     skills: ["LLMs", "Prompt Engineering", "Model Fine-tuning", "OCI", "Generative AI"],
     certificateUrl: "https://drive.google.com/drive/folders/18y0sicX4AUvKyf8-hk-W0bbrHtMwsJwV?usp=sharing",
