@@ -28,7 +28,7 @@ export const projectsData = [
     demoUrl: "#"
   },
   {
-    title: "Threat Detection",
+    title: "ThreatDetection",
     description: "Developed a machine learning–based system that analyzes network traffic to detect anomalies and potential cyber threats. Features real-time REST APIs for deployment and interactive visualization dashboards.",
     tech: ["Python", "Scikit-learn", "TensorFlow", "Flask"],
     year: "2025",
@@ -38,11 +38,11 @@ export const projectsData = [
   },
   {
     title: "ShikshaSahayak",
-    description: "https://github.com/SriramKancherla/Offline-first-Education-Management-Console",
+    description: "Architected an offline-first management suite with 10+ automated modules, achieving zero-latency data entry and reducing administrative overhead by 25% through centralized local-to-cloud reconciliation.",
     tech: ["Node.js", "MongoDB", "Electron","REST APIs"],
     year: "2026",
     gradient: "from-orange-500/10 to-red-500/10",
-    githubUrl: "https://github.com/Adarsh16-30/",
+    githubUrl: "https://github.com/SriramKancherla/Offline-first-Education-Management-Console",
     demoUrl: "#"
   },
   {
