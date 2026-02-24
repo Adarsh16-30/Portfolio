@@ -10,6 +10,15 @@ export const projectsData = [
     demoUrl: "#"
   },
   {
+    title: "Wafer Map Pattern Intelligence",
+    description: "Engineered a Deep Learning pipeline to automate semiconductor defect detection, utilizing CNNs and Autoencoders to achieve 99%+ accuracy in identifying spatial failure patterns and optimizing manufacturing yield.",
+    tech: ["Python", "Pytorch/Tensorflow", "CNNs", "Computer Vision"],
+    year: "2026",
+    gradient: "from-orange-500/10 to-green-500/10",
+    githubUrl: "https://github.com/SriramKancherla/Image-based-Wafer-Map-Pattern-intelligence",
+    demoUrl: "#"
+  },
+  {
     title: "SecureFinanceApp",
     description: "Engineered a secure, server-side application for real-time digital transactions, integrating scalable infrastructure and automated data integrity checks. Used JWT authentication, bcrypt hashing, and RESTful APIs.",
     tech: ["Node.js", "MongoDB", "JWT", "Bcrypt"],
@@ -19,7 +28,7 @@ export const projectsData = [
     demoUrl: "#"
   },
   {
-    title: "ThreatDetection",
+    title: "Threat Detection",
     description: "Developed a machine learning–based system that analyzes network traffic to detect anomalies and potential cyber threats. Features real-time REST APIs for deployment and interactive visualization dashboards.",
     tech: ["Python", "Scikit-learn", "TensorFlow", "Flask"],
     year: "2025",
@@ -28,12 +37,21 @@ export const projectsData = [
     demoUrl: "#"
   },
   {
-    title: "TradeVerse",
-    description: "Designed and built a scalable backend system simulating real-time trading challenges for 200+ users. Implemented reliable infrastructure with real-time data tracking, leaderboard analytics, and performance-optimized logic.",
-    tech: ["React", "Flask", "MySQL"],
-    year: "2025",
+    title: "ShikshaSahayak",
+    description: "https://github.com/SriramKancherla/Offline-first-Education-Management-Console",
+    tech: ["Node.js", "MongoDB", "Electron","REST APIs"],
+    year: "2026",
     gradient: "from-orange-500/10 to-red-500/10",
     githubUrl: "https://github.com/Adarsh16-30/",
+    demoUrl: "#"
+  },
+  {
+    title: "CommandLineInterface",
+    description: "Streamlined CLI application deploying 40+ distinct developer utilities—ranging from OpenAI-driven code generation and SSH management to automated deployments—reducing routine administrative overhead by centralizing essential tools.",
+    tech: ["V8 JavaScript Runtime", "LLM Architectures", "DevOps Tooling"],
+    year: "2025",
+    gradient: "from-yellow-500/10 to-green-500/10",
+    githubUrl: "https://github.com/Adarsh16-30/CommandLineInterface",
     demoUrl: "#"
   },
   {
@@ -46,7 +64,7 @@ export const projectsData = [
     demoUrl: "#"
   },
   {
-    title: "PatientReportAnalysis",
+    title: "Patient Report Analysis",
     description: "Developed an AI-powered Python application to analyze medical patient data from flat JSON or FHIR bundles. Implemented multiple agents using LangChain and local LLMs (via Ollama) to deliver actionable health advice, risk predictions, and educational tips. Created both an interactive Streamlit web UI for file uploads and a CLI for batch processing.",
     tech: ["Python", "LangChain", "Ollama", "Streamlit"],
     year: "2025",
@@ -54,15 +72,7 @@ export const projectsData = [
     githubUrl: "https://github.com/Adarsh16-30/PatientReportAnalysis",
     demoUrl: "#"
   },
-  {
-    title: "CommandLineInterface",
-    description: "Built a powerful CLI tool supporting multiple modules for GitHub automation, Hugging Face model deployment, file management, and system utilities. Streamlined developer workflows with commands for creating repositories, managing issues, uploading files, and interacting with AI models. Designed with a modular architecture for scalability, automation, and seamless integration across platforms.",
-    tech: ["Node.js", "JavaScript", "Hugging Face API", "GitHub API"],
-    year: "2025",
-    gradient: "from-yellow-500/10 to-green-500/10",
-    githubUrl: "https://github.com/Adarsh16-30/CommandLineInterface",
-    demoUrl: "#"
-  },
+  
   // Add more projects below
 ];
 
