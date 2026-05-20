@@ -193,17 +193,22 @@ export async function cmdExit() {
 }
 
 export async function cmdCoffee() {
-  const cup = `
-    ( (
-     ) )
-  ........
-  |      |]
-  \      /
-   \____/
-`;
+  const cup = [
+    '( ( )  ) ',
+    ' ........',
+    ' |      |]',
+    '  \\      /',
+    '   \\____/',
+  ];
+
   await printLine('Design fuel level:', { className: 'line-header' });
-  await printLine(cup, { className: 'line-accent' });
+
+  for (const line of cup) {
+    await printLine(line, { className: 'line-accent' });
+  }
+
   await printLine('');
+
   const level = Math.floor(Math.random() * 60) + 40;
   const barHTML = `
     <div class="skill-row">
@@ -215,21 +220,24 @@ export async function cmdCoffee() {
 }
 
 export async function cmdFigma() {
-  const figmaArt = `
-   ┌─────────────────────────────┐
-   │ ███ ███ ███ ███ ███ ███ █ │
-   │ █ █ █ █ █ █ █ █ █ █ █ █ █ │
-   │ ███ ███ ███ ███ ███ ███ █ │
-   │ █ █ █ █ █ █ █ █ █ █ █ █ █ │
-   │ ███ ███ ███ ███ ███ ███ █ │
-   └─────────────────────────────┘
-`;
-  await printLine(figmaArt, { className: 'line-accent' });
+  const figmaArt = [
+    '   ┌─────────────────────────────┐',
+    '   │ ███ ███ ███ ███ ███ ███ █ │',
+    '   │ █ █ █ █ █ █ █ █ █ █ █ █ █ │',
+    '   │ ███ ███ ███ ███ ███ ███ █ │',
+    '   │ █ █ █ █ █ █ █ █ █ █ █ █ █ │',
+    '   │ ███ ███ ███ ███ ███ ███ █ │',
+    '   └─────────────────────────────┘',
+  ];
+
+  for (const line of figmaArt) {
+    await printLine(line, { className: 'line-accent' });
+  }
+
   await printLine('<span class="line-success">I live here. Send help.</span>', { isHTML: true });
   await printLine('Current tab count: ∞', { className: 'line-muted' });
   await printLine('Unsaved changes: always', { className: 'line-muted' });
 }
-
 export async function cmdKonami() {
   const { launchConfetti } = await import('../effects.js');
   await printLine('PARTY MODE ACTIVATED!', { className: 'line-success' });
