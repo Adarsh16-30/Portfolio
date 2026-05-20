@@ -184,14 +184,18 @@ export const SKILLS = [
   { name: 'Databases / Backend', pct: 88, color: 'c6' },
 ];
 
-export const README_TEXT = `This site now surfaces the contents of my resume. Use /resume to view the PDF, /download to save it, and /research or /achievements to explore the extra sections.`;
+export const README_TEXT = `Hey, you found this. Nice.\n\nIf you're reading this, you're probably the kind of person who inspects elements, reads source code, and appreciates the details. We'd get along.\n\nI believe the best engineering is invisible. It doesn't make you think about the interface — it makes you think about your goals. Every line I ship is in service of that belief.\nThe world has enough pretty mockups that never ship.\n<span class='line-success'>I build things that do.</span>\n\n- Adarsh`;
 
 export const ABOUT_TEXT = {
-  intro: `I’m a third-year Computer Science student at VIT Vellore building scalable systems and exploring emerging technologies.`,
-  whatIDo: `Full-stack development, cybersecurity tooling, applied machine learning, and production-oriented software systems.`,
-  career: `Currently focused on internships, high-signal projects, and research-backed portfolio work.`,
-  teaching: `I like mentoring through code reviews, systems thinking, and practical problem solving.`,
-  beyond: ['Cycling', 'Photography', 'Reading about systems', 'Open source'],
+  intro: `<span class='line-header'>About Adarsh Tripathi</span>\nFull Stack Developer & ML Engineer based in Vellore, India. I build scalable systems, ship production code, and explore emerging tech.\n`,
+  whatIDo: `<span class='line-section'>What I do</span>\nI turn complexity into clarity. From RAG systems for 40,000+ students to zero-trust SOCs and deep learning pipelines, my work sits at the intersection of engineering craft, systems thinking, and research.\nAt every stage I ask: <span class='line-accent'>"Does this remove friction?"</span> Complexity isn't the enemy — confusion is.\n`,
+  career: `<span class='line-section'>Education</span>\n• Vellore Institute of Technology, Vellore — B.Tech CSE (2023–2027), CGPA: 8.96\n• DAV Public School, Delhi — Class XII (2023): 94%\n• DAV Public School, Delhi — Class X (2021): 88%\n\n<span class='line-section'>Skills</span>\nProgramming: Python, Java, C, C++\nWeb: HTML, CSS, JS, TS, React, Node.js, Flask, Django, Express\nBackend: MySQL, MongoDB, REST APIs, JWT\nTools: Git, Linux, Docker, K8s, Vertex AI, Power BI, Tableau\nLibraries: NumPy, Pandas, Matplotlib, TensorFlow, Keras\nCS: OOPS, DBMS, SQL, DSA, OS, CN, COA, System Design\nSoft: Ownership, Problem Solving, Time Management, Adaptability\n`,
+  projects: `<span class='line-section'>Projects</span>\n• College RAG System — Production-grade RAG for 40k+ students (Python, LangChain, Flask)\n• Zero-Trust SOC Platform — Full-stack SOC with GNN-based UEBA, LLM triage (Python, Kafka, Docker)\n• WaferMap Pattern Intelligence — Deep learning for defect detection, 99%+ accuracy (PyTorch, CV)\n• Shiksha Sahayak — Offline-first education suite, 25% admin overhead reduction (Node.js, MongoDB)\n• CLI Suite — 40+ dev utilities, LLM-driven codegen, SSH provisioning (JS, DevOps)\n`,
+  research: `<span class='line-section'>Research & Publications</span>\n• Patent: Early Crop Disease Detection System (VIT, 2026)\n• Paper (in progress): Quantum-Enhanced Crop Disease Detection\n`,
+  hackathons: `<span class='line-section'>Hackathons & Competitions</span>\n• Deloitte HackSplosion 2026 — GenAI solution, semi-finalist\n• SIH 2025 — National shortlist\n• BrAINWARS 2026 — National business case finalist\n• JPMC Code for Good 2026 — Cleared all rounds\n`,
+  certs: `<span class='line-section'>Certifications</span>\n• IBM Full Stack Software Developer\n• Amazon Java\n• Stanford ML (DeepLearning.AI)\n• Oracle GenAI\n• Google Cybersecurity\n`,
+  experience: `<span class='line-section'>Experience</span>\nIEEE EMBS, VIT (May–Dec 2024): Organized technical workshops on biomedical engineering and healthcare tech. Coordinated interdisciplinary sessions on biotech and medical devices.\n`,
+  beyond: `<span class='line-section'>Beyond the screen</span>\n• Mentoring, open source, systems thinking, cycling, photography.\n<span class='line-muted'>Still there? Try /work to see what I've built...</span>`
 };
 
 export const EDUCATION = [

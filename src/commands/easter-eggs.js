@@ -13,11 +13,13 @@ export async function cmdWhoami() {
 
 export async function cmdCatReadme() {
   await printLine('# README.md', { className: 'line-accent' });
+  await printLine("<span class='line-accent'>Hey, you found this. Nice.</span>", { isHTML: true });
+  await printLine("If you're reading this, you're probably the kind of person who inspects elements, reads source code, and appreciates the details. We'd get along.");
+  await printLine("<span class='line-muted'>I believe the best engineering is invisible. It doesn't make you think about the interface — it makes you think about your goals. Every line I ship is in service of that belief.</span>", { isHTML: true });
+  await printLine('The world has enough pretty mockups that never ship.');
+  await printLine("<span class='line-success'>I build things that do.</span>", { isHTML: true });
   await printLine('');
-  const lines = README_TEXT.split('\n');
-  for (const line of lines) {
-    await printLine(line);
-  }
+  await printLine('- Adarsh', { className: 'line-muted' });
 }
 
 export async function cmdSecrets() {

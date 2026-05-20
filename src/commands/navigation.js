@@ -71,38 +71,23 @@ export async function cmdAchievements() {
 
 export async function cmdAbout() {
   await showLoading('Fetching profile');
-  
-  await printLine(ABOUT_TEXT.intro);
+  await printLine(ABOUT_TEXT.intro, { isHTML: true });
   await printLine('');
-
-  await printLine('What I do', { className: 'line-header' });
-  await printBlock(ABOUT_TEXT.whatIDo.split('\n'));
+  await printLine(ABOUT_TEXT.whatIDo, { isHTML: true });
   await printLine('');
-
-  await printLine('Career path', { className: 'line-header' });
-  await printBlock(ABOUT_TEXT.career.split('\n'));
+  await printLine(ABOUT_TEXT.career, { isHTML: true });
   await printLine('');
-
-  await printLine('Education snapshot', { className: 'line-header' });
-  for (const item of EDUCATION) {
-    await printLine(`  ${item.degree} — ${item.school} (${item.years})`);
-    await printLine(`  ${item.note}`, { className: 'line-dim' });
-  }
+  await printLine(ABOUT_TEXT.projects, { isHTML: true });
   await printLine('');
-
-  await printLine('Teaching & mentoring', { className: 'line-header' });
-  await printLine(ABOUT_TEXT.teaching);
+  await printLine(ABOUT_TEXT.research, { isHTML: true });
   await printLine('');
-
-  await printLine('Beyond the screen', { className: 'line-header' });
-  for (const item of ABOUT_TEXT.beyond) {
-    await printLine(`- ${item}`, { className: 'line-success' });
-  }
-
+  await printLine(ABOUT_TEXT.hackathons, { isHTML: true });
   await printLine('');
-  await printLine('→ /research to see papers and patents', { className: 'line-dim' });
-  await printLine('→ /achievements to see hackathons and competitions', { className: 'line-dim' });
-  await printLine('// try: cat readme.md', { className: 'line-dim' });
+  await printLine(ABOUT_TEXT.certs, { isHTML: true });
+  await printLine('');
+  await printLine(ABOUT_TEXT.experience, { isHTML: true });
+  await printLine('');
+  await printLine(ABOUT_TEXT.beyond, { isHTML: true });
 }
 
 export async function cmdWork() {
