@@ -194,41 +194,36 @@ export async function cmdExit() {
 
 export async function cmdCoffee() {
   const cup = `
-      ( (
-       ) )
-    ........
-    |      |]
-    \      /
-     \____/
-  `;
+    ( (
+     ) )
+  ........
+  |      |]
+  \      /
+   \____/
+`;
   await printLine('Design fuel level:', { className: 'line-header' });
   await printLine(cup, { className: 'line-accent' });
+  await printLine('');
   const level = Math.floor(Math.random() * 60) + 40;
   const barHTML = `
     <div class="skill-row">
-      <span class="skill-name">Caffeine Level</span>
-      <div class="skill-bar"><div class="skill-fill c1" style="width: ${level}%"></div></div>
-      <span class="skill-pct">${level}%</span>
+      <span class="skill-name">[██████████░░░░] ${level}%</span>
     </div>`;
   await printLine(barHTML, { isHTML: true });
-  await printLine(level > 70 ? 'Status: Caffeinated and pixel-pushing' : 'Status: Need refill...', {
-    className: level > 70 ? 'line-success' : 'line-accent',
-  });
+  await printLine('<span class="line-success">Status: Caffeinated and pixel-pushing</span>', { isHTML: true });
   await printLine('Daily intake: Yes', { className: 'line-muted' });
 }
 
 export async function cmdFigma() {
   const figmaArt = `
-  ┌───────────────────────────────┐
-  │ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ │
-  │ ▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒ │
-  │ ▒▒░░██████████████░░░░░░▒▒ │
-  │ ▒▒░░██████████████░░░░░░▒▒ │
-  │ ▒▒░░██████████████░░░░░░▒▒ │
-  │ ▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒ │
-  │ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ │
-  └───────────────────────────────┘
-  `;
+   ┌─────────────────────────────┐
+   │ ███ ███ ███ ███ ███ ███ █ │
+   │ █ █ █ █ █ █ █ █ █ █ █ █ █ │
+   │ ███ ███ ███ ███ ███ ███ █ │
+   │ █ █ █ █ █ █ █ █ █ █ █ █ █ │
+   │ ███ ███ ███ ███ ███ ███ █ │
+   └─────────────────────────────┘
+`;
   await printLine(figmaArt, { className: 'line-accent' });
   await printLine('<span class="line-success">I live here. Send help.</span>', { isHTML: true });
   await printLine('Current tab count: ∞', { className: 'line-muted' });
