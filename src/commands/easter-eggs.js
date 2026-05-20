@@ -194,19 +194,24 @@ export async function cmdExit() {
 
 export async function cmdCoffee() {
   const cup = [
-    '   ( (      ',
-    '    ) )     ',
-    ' .........  ',
-    ' |       |] ',
-    ' |       |  ',
-    '  \\_____/   ',
+    '   ) ) ) )       ',
+    '  ( ( ( (        ',
+    '  ) ) ) )        ',
+    ' ___________     ',
+    ' |  _______  |   ',
+    ' | |       | |   ',
+    ' | |  JAV  | |---',
+    ' | |  A    | |   ',
+    ' | |_______| |   ',
+    ' |___________| \\  ',
+    '  \\_________/    ',
   ];
 
   await printLine('Design fuel level:', { className: 'line-header' });
 
   for (const line of cup) {
-    await printLine(line, { className: 'line-accent' });
-  }
+  await printLine(`<pre class="line-accent" style="margin:0; font-family: inherit;">${line}</pre>`, { isHTML: true });
+}
 
   await printLine('');
 
