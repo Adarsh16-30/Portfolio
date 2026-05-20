@@ -1,69 +1,46 @@
-<h1 align="center">⚛️ Portfolio Website</h1>
-<p align="center">
-<b>A personal portfolio website built in React and TypeScript to showcase skills, projects, and experience.</b>
+# Terminal Portfolio
 
-<i>Modern responsive design using React, TypeScript, and Tailwind CSS.</i>
-</p>
-<hr>
-<h3>🚀 Features</h3>
-<ul>
-<li>Modern responsive design using React + Tailwind CSS.</li>
-<li>Project showcase with dynamic entries loaded from TypeScript data files.</li>
-<li>Resume and certificates section.</li>
-<li>All pages implemented in modular components for easy extension.</li>
-<li>Simple deploy and maintenance workflow.</li>
-</ul>
-<h3>🛠️ Getting Started</h3>
-<p>Clone the repository:</p>
-<pre>
-git clone https://github.com/Adarsh16-30/Portfolio.git
-cd Portfolio
-</pre>
-<p>Install dependencies:</p>
-<pre>
-npm install
-</pre>
-<p>Run the development server:</p>
-<pre>
-npm run dev
-</pre>
-<p>Open in browser: <a href="http://localhost:8080">http://localhost:8080</a></p>
-<h3>💻 Tech Stack</h3>
-<ul>
-<li><b>Frontend:</b> React, TypeScript</li>
-<li><b>Styling:</b> Tailwind CSS, PostCSS</li>
-<li><b>Bundler:</b> Vite</li>
-<li><b>Linting:</b> ESLint</li>
-</ul>
-<h3>📁 Folder Structure</h3>
-<pre>
-├── public/                 # Static files (use for images/assets)
-├── src/
-│   ├── components/         # Reusable React UI components
-│   ├── data/               # Project/certificates TypeScript data files
-│   ├── hooks/              # Custom React hooks
-│   ├── lib/                # Helper libraries/util
-│   ├── pages/              # Main site pages (AllProjects.tsx, Index.tsx, NotFound.tsx, Resume.tsx)
-│   ├── App.tsx             # Main React App component
-│   ├── index.css           # Global styles
-│   ├── main.tsx            # App entry point
-│   └── vite-env.d.ts       # Vite environment typings
-├── components.json         # List of project UI components
-├── index.html              # Vite app HTML shell
-├── package.json            # NPM dependencies and scripts
-├── tailwind.config.ts      # Tailwind CSS configuration
-├── postcss.config.js       # PostCSS configuration
-├── tsconfig.json           # TypeScript config files
-├── vite.config.ts          # Vite build config
-├── eslint.config.js        # ESLint configuration
-└── README.md               # This documentation file
-</pre>
-<h3>🌐 Deployment</h3>
-<p>Deploy easily to Vercel, Netlify, or any static hosting service supporting Vite/React apps.</p>
-<h3>👤 Credits</h3>
-<p>Developed by Adarsh Tripathi</p>
-<ul>
-<li><b>Portfolio:</b> <a href="https://adarsh-tripathi.vercel.app">adarsh-tripathi.vercel.app</a></li>
-<li><b>Contact:</b> adarsh.utkarsh09@gmail.com</li>
-</ul>
-<p align="center"><b>Made by Adarsh</b></p>
+A retro terminal-style developer portfolio website built with Vite, HTML, CSS, and Vanilla JavaScript.
+
+Features a fully interactive command-line interface (CLI) to browse resume details, projects, education, certificates, and research, alongside custom themes and hidden secrets.
+
+## Features
+
+- **Interactive CLI**: Command parsing, autocomplete (Tab), suggestions dropdown, history navigation (Up/Down arrows), and clickable commands.
+- **Multiple Themes**: Browse and switch themes on the fly:
+  - `Dark` (Modern terminal theme)
+  - `Light` (Clean developer theme)
+  - `Retro` (Classic green CRT screen)
+  - `Glass` (Sleek glassmorphism look)
+- **Interactive Commands**:
+  - `/about`, `/education`, `/work`, `/skills`, `/certs`, `/research`, `/achievements`
+  - `/resume` (PDF viewer overlay), `/download` (Direct download)
+  - `/linkedin`, `/github`, `/social`, `/contact`
+  - `/matrix` (Secret Matrix digital rain screen)
+  - `/clear` (Clears command execution output while preserving the header card)
+- **Dynamic Projects & Certificates**: Custom detail pages load dynamically when clicking or typing projects/credentials.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js installed on your machine.
+
+### Installation
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server locally:
+   ```bash
+   npm run dev
+   ```
+
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+The production assets will be generated in the `dist` directory, ready to be deployed to Vercel, Netlify, or GitHub Pages.

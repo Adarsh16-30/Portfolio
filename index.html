@@ -1,27 +1,83 @@
-<!doctype html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adarsh Tripathi</title>
-    <meta name="description" content="Portfolio of Adarsh Tripathi - Full Stack Developer specializing in Web Development, Machine Learning, and Cloud Technologies. VIT Vellore CSE Student." />
-    <meta name="author" content="Adarsh Tripathi" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh — Terminal Portfolio</title>
+  <meta name="description" content="Interactive terminal-style developer portfolio. Type commands to explore." />
+  <meta name="theme-color" content="#1a1f36" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Background = macOS desktop wallpaper (dock + profile card baked in) -->
+    <div class="bg-desktop" id="bg-desktop"></div>
 
-    <meta property="og:title" content="Adarsh Tripathi - Full Stack Developer" />
-    <meta property="og:description" content="Portfolio showcasing projects in Full Stack Development, Machine Learning, and Cloud Technologies" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/photo.jpeg" />
+    <div class="desktop-shell" aria-hidden="true">
+      <div class="desktop-menu-bar">
+        <div class="desktop-menu-left">
+          <span class="desktop-apple"></span>
+          <span>Finder</span>
+          <span>File</span>
+          <span>Edit</span>
+          <span>View</span>
+          <span>Go</span>
+          <span>Window</span>
+          <span>Help</span>
+        </div>
+        <div class="desktop-menu-right">
+          <span>Tue 9:41 AM</span>
+          <span>◔</span>
+          <span>◫</span>
+          <span>⌕</span>
+        </div>
+      </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@adarsh_tripathi" />
-    <meta name="twitter:image" content="/photo.jpeg" />
-  </head>
+      <div class="desktop-card">
+        <div class="desktop-card-avatar"></div>
+        <div class="desktop-card-name">Adarsh Tripathi</div>
+        <button class="desktop-card-button" type="button">Explore Profile</button>
+      </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+      <div class="desktop-dock">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <canvas id="matrix-canvas"></canvas>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="scanlines"></div>
+
+    <!-- Terminal Window -->
+    <div class="terminal booting" id="terminal">
+      <div class="title-bar" id="title-bar">
+        <div class="traffic-lights">
+          <button class="dot dot-red" id="btn-close" title="Close"></button>
+          <button class="dot dot-yellow" id="btn-minimize" title="Minimize"></button>
+          <button class="dot dot-green" id="btn-maximize" title="Maximize"></button>
+        </div>
+        <span class="title-text" id="title-text">adarsh@portfolio ~ /portfolio</span>
+      </div>
+
+      <div class="terminal-body" id="terminal-body">
+        <div class="output" id="output"></div>
+      </div>
+
+      <div class="input-bar" id="input-bar">
+        <span class="prompt">&gt;</span>
+        <input
+          type="text"
+          id="command-input"
+          class="command-input"
+          placeholder='Type a command... try "/help"'
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
