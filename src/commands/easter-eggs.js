@@ -194,11 +194,12 @@ export async function cmdExit() {
 
 export async function cmdCoffee() {
   const cup = [
-    '( ( )  ) ',
-    ' ........',
-    ' |      |]',
-    '  \\      /',
-    '   \\____/',
+    '   ( (      ',
+    '    ) )     ',
+    ' .........  ',
+    ' |       |] ',
+    ' |       |  ',
+    '  \\_____/   ',
   ];
 
   await printLine('Design fuel level:', { className: 'line-header' });
