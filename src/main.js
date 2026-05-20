@@ -140,6 +140,10 @@ function setupInputListeners() {
     if (e.target.closest('.traffic-lights')) return;
     if (e.target.closest('.line-link')) return;
     if (e.target.closest('.action-button')) return;
+    if (e.target.closest('.social-row')) return;
+    if (e.target.closest('.suggestions')) return;
+    if (e.target.closest('a')) return;
+    if (e.target.closest('button')) return;
     focusInput();
   });
 }
