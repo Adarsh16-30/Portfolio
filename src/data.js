@@ -240,17 +240,17 @@ export const ACHIEVEMENTS = [
   {
     cmd: 'deloitte-hack',
     title: 'Deloitte HackSplosion 2026',
-    desc: 'Built an AI-based solution as part of a team and advanced to the semi-final round of Deloitte’s national GenW.AI hackathon.'
+    desc: 'Engineered a GenAI solution in a cross-functional team, advancing to the semi-final round of Deloitte’s national GenW.AI hackathon.'
   },
   {
     cmd: 'sih-2025',
     title: 'Smart India Hackathon (SIH) 2025',
-    desc: 'Cleared VIT’s internal evaluation round and earned a national-level shortlist among competing college teams.'
+    desc: 'Qualified through institutional selection and advanced to the national shortlist out of thousands of competing teams across India.'
   },
   {
     cmd: 'brainwars',
     title: 'BrAINWARS 2026',
-    desc: 'Qualified through the Brain Blitz round of Bain Capability Network’s national business case competition.'
+    desc: 'Advanced through the Brain Blitz qualifier at Bain Capability Network’s national business case competition, competing against top undergraduate teams.'
   },
   {
     cmd: 'jpmc-cfg',
