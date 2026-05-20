@@ -107,60 +107,87 @@ export async function cmdSudoHire() {
 }
 
 export async function cmdRmDoubt() {
-  await printLine('rm: removing doubts...', { className: 'line-muted' });
-  await wait(400);
-  await printLine('[ok] Doubts removed. Confidence installed.', { className: 'line-success' });
+  await printLine('<span class="line-cmd">$ rm -rf doubts/</span>', { isHTML: true });
+  await wait(300);
+  await printLine('Removing doubts/impostor-syndrome ... <span class="line-success">done</span>', { isHTML: true });
+  await wait(200);
+  await printLine('Removing doubts/will-he-deliver ... <span class="line-success">done</span>', { isHTML: true });
+  await wait(200);
+  await printLine('Removing doubts/is-he-expensive ... <span class="line-success">done</span>', { isHTML: true });
+  await wait(200);
+  await printLine('Removing doubts/can-he-lead ... <span class="line-success">done</span>', { isHTML: true });
+  await wait(200);
+  await printLine('<span class="line-accent">★ All doubts removed. You should definitely hire me.</span>', { isHTML: true });
 }
 
 export async function cmdLs() {
-  await printLine('total 42', { className: 'line-dim' });
-  
+  await printLine('<span class="line-cmd">$ ls</span>', { isHTML: true });
+  await wait(200);
   const files = [
-    { perm: '-rwxr-xr-x', links: 1, owner: 'adarsh', group: 'staff', size: '1.2K', date: 'May 20 01:30', name: 'about.sh', cmd: '/about' },
-    { perm: 'drwxr-xr-x', links: 4, owner: 'adarsh', group: 'staff', size: '128B', date: 'May 20 01:30', name: 'certs/', cmd: '/certs' },
-    { perm: 'drwxr-xr-x', links: 8, owner: 'adarsh', group: 'staff', size: '256B', date: 'May 20 01:30', name: 'projects/', cmd: '/work' },
-    { perm: 'drwxr-xr-x', links: 5, owner: 'adarsh', group: 'staff', size: '160B', date: 'May 20 01:30', name: 'research/', cmd: '/research' },
-    { perm: '-rw-r--r--', links: 1, owner: 'adarsh', group: 'staff', size: '145K', date: 'May 20 01:30', name: 'resume.pdf', cmd: '/resume' },
-    { perm: 'drwxr-xr-x', links: 6, owner: 'adarsh', group: 'staff', size: '192B', date: 'May 20 01:30', name: 'social/', cmd: '/social' },
-    { perm: '-rw-r--r--', links: 1, owner: 'adarsh', group: 'staff', size: '942B', date: 'May 20 01:30', name: 'README.md', cmd: 'cat readme.md' },
+    { perm: 'drwxr-xr-x', name: 'design-systems.exe', accent: true },
+    { perm: 'drwxr-xr-x', name: 'ux-research.doc', accent: false },
+    { perm: '-rwxr-xr-x', name: 'figma-mastery.cfg', accent: true },
+    { perm: '-rw-r--r--', name: 'pixel-perfection.so', accent: false },
+    { perm: '-rwxr-xr-x', name: 'strategic-thinking.bin', accent: true },
+    { perm: 'drwxr-xr-x', name: 'workshop-facilitation/', accent: false },
+    { perm: '-rw-r--r--', name: 'accessibility.ally', accent: true },
+    { perm: '-rwxr-xr-x', name: 'brand-identity.svg', accent: true },
+    { perm: '-rw-r--r--', name: 'coffee-dependency.lock', accent: false },
+    { perm: '-rw-------', name: 'secret-design-sauce.enc', accent: false, danger: true },
   ];
-
   for (const file of files) {
-    const isDir = file.name.endsWith('/');
-    const nameClass = isDir ? 'line-accent' : 'line-success';
-    const html = `<span class="line-dim">${file.perm}</span>   <span class="line-dim">${file.links}</span>   <span class="line-dim">${file.owner}</span>   <span class="line-dim">${file.group}</span>   <span class="line-dim" style="display:inline-block; text-align:right; min-width:50px;">${file.size}</span>   <span class="line-dim">${file.date}</span>   <span class="line-link ${nameClass}" data-cmd="${file.cmd}" style="font-weight:700;">${file.name}</span>`;
+    let nameClass = file.accent ? 'line-accent' : 'line-success';
+    if (file.danger) nameClass = 'line-danger';
+    const html = `<span class="line-dim">${file.perm}</span> <span class="${nameClass}" style="font-weight:700;">${file.name}</span>`;
     await printLine(html, { isHTML: true });
     await wait(80);
   }
 }
 
 export async function cmdPing() {
-  await printLine(`Pinging ${USER.handle}...`, { className: 'line-muted' });
-  await wait(300);
-
-  for (let i = 0; i < 4; i++) {
-    const ms = Math.floor(Math.random() * 10) + 1;
-    await printLine(`Reply from ${USER.handle}: bytes=32 time=${ms}ms TTL=128`);
-    await wait(200);
-  }
-
-  await printLine('');
-  await printLine('Status: Available for hire ✓', { className: 'line-success' });
+  await printLine(`<span class="line-cmd">$ ping adarsh</span>`, { isHTML: true });
+  await wait(200);
+  await printLine('PING adarsh.dev (127.0.0.1): 56 data bytes', { className: 'line-muted' });
+  await wait(200);
+  await printLine('64 bytes from Portfolio: icmp_seq=0 ttl=64 time=0.1ms — Always online', { className: 'line-success' });
+  await wait(200);
+  await printLine('64 bytes from Portfolio: icmp_seq=1 ttl=64 time=0.2ms — Ready for new challenges', { className: 'line-success' });
+  await wait(200);
+  await printLine('64 bytes from Portfolio: icmp_seq=2 ttl=64 time=0.1ms — Responds faster than your current dev', { className: 'line-success' });
+  await wait(200);
+  await printLine('64 bytes from Portfolio: icmp_seq=3 ttl=64 time=0.3ms — Will not ghost you', { className: 'line-success' });
+  await wait(200);
+  await printLine('--- adarsh.dev ping statistics ---', { className: 'line-muted' });
+  await printLine('4 packets transmitted, 4 received, 0% packet loss', { className: 'line-muted' });
 }
 
 export async function cmdGitLog() {
-  for (const entry of GIT_LOG) {
-    await printLine(
-      `<span class="line-accent">${entry.hash}</span>  ${entry.msg}  <span class="line-dim">(${entry.date})</span>`,
-      { isHTML: true }
-    );
+  await printLine('<span class="line-cmd">$ git log</span>', { isHTML: true });
+  await wait(200);
+  const logs = [
+    { hash: 'a1b2c3d', msg: 'Fixed pixel that was 1px off. Again.', date: 'today' },
+    { hash: 'e4f5g6h', msg: 'Removed 47 unnecessary gradients from client mockup', date: 'yesterday' },
+    { hash: 'i7j8k9l', msg: 'Convinced stakeholder that Comic Sans is not on-brand', date: '2 days ago' },
+    { hash: 'm0n1o2p', msg: 'Refactored entire design system at 2am. No regrets.', date: '3 days ago' },
+    { hash: 'q3r4s5t', msg: 'Deleted production Figma file. Recovered it. Nobody noticed.', date: 'last week' },
+    { hash: 'u6v7w8x', msg: 'Added dark mode. Refused to add light mode. Stood ground.', date: 'last month' },
+  ];
+  for (const entry of logs) {
+    await printLine(`<span class="line-accent">commit ${entry.hash}</span> <span class="line-dim">(${entry.date})</span>`, { isHTML: true });
+    await printLine(`<span class="line-success">    ${entry.msg}</span>`, { isHTML: true });
+    await wait(120);
   }
 }
 
 export async function cmdExit() {
-  await printLine('Closing connection... Sending SIGTERM', { className: 'line-muted' });
-  await wait(400);
-  window.dispatchEvent(new CustomEvent('kill-portfolio'));
+  await printLine('<span class="line-cmd">$ exit</span>', { isHTML: true });
+  await wait(200);
+  await printLine('<span style="color:#ff6f6f">There is no escape.</span>', { isHTML: true });
+  await wait(200);
+  await printLine('<span style="color:#7fffd4">But /contact is a way forward.</span>', { isHTML: true });
+  await printLine('<span class="line-muted">(You\'re stuck here now. Might as well explore.)</span>', { isHTML: true });
+  await wait(200);
+  await printLine('<span class="line-system">[system] You\'ve run 3 commands. There are more hiding beneath the surface.</span>', { isHTML: true });
 }
 
 export async function cmdCoffee() {
