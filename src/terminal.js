@@ -53,6 +53,7 @@ export function printLine(text, opts = {}) {
       if (isHTML) {
         div.innerHTML = text;
       } else {
+        div.style.whiteSpace = 'pre';
         div.textContent = text;
       }
       output().appendChild(div);

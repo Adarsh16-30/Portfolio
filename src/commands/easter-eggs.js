@@ -203,22 +203,27 @@ export async function cmdCoffee() {
     ' | |  JAV  | |---',
     ' | |  A    | |   ',
     ' | |_______| |   ',
-    ' |___________| \\  ',
+    ' |___________|   ',
     '  \\_________/    ',
   ];
 
   await printLine('Design fuel level:', { className: 'line-header' });
 
   for (const line of cup) {
-  await printLine(`<pre class="line-accent" style="margin:0; font-family: inherit;">${line}</pre>`, { isHTML: true });
-}
+    await printLine(line, { className: 'line-accent' });
+  }
 
   await printLine('');
 
   const level = Math.floor(Math.random() * 60) + 40;
+  const total = 20;
+  const filled = Math.round((level / 100) * total);
+  const empty = total - filled;
+  const bar = '█'.repeat(filled) + '░'.repeat(empty);
+
   const barHTML = `
     <div class="skill-row">
-      <span class="skill-name">[██████████░░░░] ${level}%</span>
+      <span class="skill-name">[${bar}] ${level}%</span>
     </div>`;
   await printLine(barHTML, { isHTML: true });
   await printLine('<span class="line-success">Status: Caffeinated and pixel-pushing</span>', { isHTML: true });
