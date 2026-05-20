@@ -75,18 +75,13 @@ export async function cmdAbout() {
   await printLine('');
   await printLine(ABOUT_TEXT.whatIDo, { isHTML: true });
   await printLine('');
-  await printLine(ABOUT_TEXT.career, { isHTML: true });
-  await printLine('');
+  await printLine(ABOUT_TEXT.education, { isHTML: true });
+  await printLine(ABOUT_TEXT.skills, { isHTML: true });
   await printLine(ABOUT_TEXT.projects, { isHTML: true });
-  await printLine('');
   await printLine(ABOUT_TEXT.research, { isHTML: true });
-  await printLine('');
   await printLine(ABOUT_TEXT.hackathons, { isHTML: true });
-  await printLine('');
   await printLine(ABOUT_TEXT.certs, { isHTML: true });
-  await printLine('');
   await printLine(ABOUT_TEXT.experience, { isHTML: true });
-  await printLine('');
   await printLine(ABOUT_TEXT.beyond, { isHTML: true });
 }
 
