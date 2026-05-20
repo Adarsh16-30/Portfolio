@@ -111,29 +111,31 @@ export async function cmdRmDoubt() {
   await wait(300);
   await printLine('Removing doubts/impostor-syndrome ... <span class="line-success">done</span>', { isHTML: true });
   await wait(200);
-  await printLine('Removing doubts/will-he-deliver ... <span class="line-success">done</span>', { isHTML: true });
+  await printLine('Removing doubts/too-young ... <span class="line-success">done</span>', { isHTML: true });
   await wait(200);
-  await printLine('Removing doubts/is-he-expensive ... <span class="line-success">done</span>', { isHTML: true });
+  await printLine('Removing doubts/too-academic ... <span class="line-success">done</span>', { isHTML: true });
   await wait(200);
-  await printLine('Removing doubts/can-he-lead ... <span class="line-success">done</span>', { isHTML: true });
+  await printLine('Removing doubts/ai-overhype ... <span class="line-success">done</span>', { isHTML: true });
   await wait(200);
-  await printLine('<span class="line-accent">★ All doubts removed. You should definitely hire me.</span>', { isHTML: true });
+  await printLine('Removing doubts/does-he-ship ... <span class="line-success">done</span>', { isHTML: true });
+  await wait(200);
+  await printLine('<span class="line-accent">★ All doubts removed. Ready to build, research, and ship.</span>', { isHTML: true });
 }
 
 export async function cmdLs() {
   await printLine('<span class="line-cmd">$ ls</span>', { isHTML: true });
   await wait(200);
   const files = [
-    { perm: 'drwxr-xr-x', name: 'design-systems.exe', accent: true },
-    { perm: 'drwxr-xr-x', name: 'ux-research.doc', accent: false },
-    { perm: '-rwxr-xr-x', name: 'figma-mastery.cfg', accent: true },
-    { perm: '-rw-r--r--', name: 'pixel-perfection.so', accent: false },
-    { perm: '-rwxr-xr-x', name: 'strategic-thinking.bin', accent: true },
-    { perm: 'drwxr-xr-x', name: 'workshop-facilitation/', accent: false },
-    { perm: '-rw-r--r--', name: 'accessibility.ally', accent: true },
-    { perm: '-rwxr-xr-x', name: 'brand-identity.svg', accent: true },
+    { perm: 'drwxr-xr-x', name: 'rag-system/', accent: true },
+    { perm: '-rw-r--r--', name: 'ml-pipeline.py', accent: true },
+    { perm: '-rwxr-xr-x', name: 'cybersec-toolkit.sh', accent: true },
+    { perm: '-rw-r--r--', name: 'resume.pdf', accent: false },
     { perm: '-rw-r--r--', name: 'coffee-dependency.lock', accent: false },
-    { perm: '-rw-------', name: 'secret-design-sauce.enc', accent: false, danger: true },
+    { perm: '-rw-------', name: 'secret-sauce.enc', accent: false, danger: true },
+    { perm: '-rw-r--r--', name: 'README.md', accent: false },
+    { perm: '-rw-r--r--', name: 'ai-research.log', accent: true },
+    { perm: '-rw-r--r--', name: 'pixel-perfection.so', accent: false },
+    { perm: '-rw-r--r--', name: 'figma-mastery.cfg', accent: true },
   ];
   for (const file of files) {
     let nameClass = file.accent ? 'line-accent' : 'line-success';
@@ -149,13 +151,13 @@ export async function cmdPing() {
   await wait(200);
   await printLine('PING adarsh.dev (127.0.0.1): 56 data bytes', { className: 'line-muted' });
   await wait(200);
-  await printLine('64 bytes from Portfolio: icmp_seq=0 ttl=64 time=0.1ms — Always online', { className: 'line-success' });
+  await printLine('64 bytes from Vellore: icmp_seq=0 ttl=64 time=0.1ms — Always online', { className: 'line-success' });
   await wait(200);
-  await printLine('64 bytes from Portfolio: icmp_seq=1 ttl=64 time=0.2ms — Ready for new challenges', { className: 'line-success' });
+  await printLine('64 bytes from Vellore: icmp_seq=1 ttl=64 time=0.2ms — Building, learning, shipping', { className: 'line-success' });
   await wait(200);
-  await printLine('64 bytes from Portfolio: icmp_seq=2 ttl=64 time=0.1ms — Responds faster than your current dev', { className: 'line-success' });
+  await printLine('64 bytes from Vellore: icmp_seq=2 ttl=64 time=0.1ms — ML/AI ready', { className: 'line-success' });
   await wait(200);
-  await printLine('64 bytes from Portfolio: icmp_seq=3 ttl=64 time=0.3ms — Will not ghost you', { className: 'line-success' });
+  await printLine('64 bytes from Vellore: icmp_seq=3 ttl=64 time=0.3ms — Will not ghost you', { className: 'line-success' });
   await wait(200);
   await printLine('--- adarsh.dev ping statistics ---', { className: 'line-muted' });
   await printLine('4 packets transmitted, 4 received, 0% packet loss', { className: 'line-muted' });
@@ -165,12 +167,12 @@ export async function cmdGitLog() {
   await printLine('<span class="line-cmd">$ git log</span>', { isHTML: true });
   await wait(200);
   const logs = [
-    { hash: 'a1b2c3d', msg: 'Fixed pixel that was 1px off. Again.', date: 'today' },
-    { hash: 'e4f5g6h', msg: 'Removed 47 unnecessary gradients from client mockup', date: 'yesterday' },
-    { hash: 'i7j8k9l', msg: 'Convinced stakeholder that Comic Sans is not on-brand', date: '2 days ago' },
-    { hash: 'm0n1o2p', msg: 'Refactored entire design system at 2am. No regrets.', date: '3 days ago' },
-    { hash: 'q3r4s5t', msg: 'Deleted production Figma file. Recovered it. Nobody noticed.', date: 'last week' },
-    { hash: 'u6v7w8x', msg: 'Added dark mode. Refused to add light mode. Stood ground.', date: 'last month' },
+    { hash: 'a1b2c3d', msg: 'Deployed College RAG System to production.', date: 'today' },
+    { hash: 'e4f5g6h', msg: 'Patched ML pipeline for 99%+ accuracy.', date: 'yesterday' },
+    { hash: 'i7j8k9l', msg: 'Refactored cybersecurity toolkit for zero-trust.', date: '2 days ago' },
+    { hash: 'm0n1o2p', msg: 'Published research on quantum crop detection.', date: '3 days ago' },
+    { hash: 'q3r4s5t', msg: 'Mentored juniors on open source contributions.', date: 'last week' },
+    { hash: 'u6v7w8x', msg: 'Added dark mode. Refused to add light mode.', date: 'last month' },
   ];
   for (const entry of logs) {
     await printLine(`<span class="line-accent">commit ${entry.hash}</span> <span class="line-dim">(${entry.date})</span>`, { isHTML: true });
@@ -185,24 +187,22 @@ export async function cmdExit() {
   await printLine('<span style="color:#ff6f6f">There is no escape.</span>', { isHTML: true });
   await wait(200);
   await printLine('<span style="color:#7fffd4">But /contact is a way forward.</span>', { isHTML: true });
-  await printLine('<span class="line-muted">(You\'re stuck here now. Might as well explore.)</span>', { isHTML: true });
+  await printLine('<span class="line-muted">(You\'re stuck here now. Might as well explore the codebase, or try /ls for a hint.)</span>', { isHTML: true });
   await wait(200);
-  await printLine('<span class="line-system">[system] You\'ve run 3 commands. There are more hiding beneath the surface.</span>', { isHTML: true });
+  await printLine('<span class="line-system">[system] You\'ve run 3 commands. There are more hiding beneath the surface. /secrets knows more.</span>', { isHTML: true });
 }
 
 export async function cmdCoffee() {
   const cup = `
-    ( (
-     ) )
-  ._______.
-  |       |]
-  \\       /
-   \`-----'`;
-
-  await printLine('Coffee fuel status', { className: 'line-header' });
+      ( (
+       ) )
+    ........
+    |      |]
+    \      /
+     \____/
+  `;
+  await printLine('Design fuel level:', { className: 'line-header' });
   await printLine(cup, { className: 'line-accent' });
-  await printLine('');
-
   const level = Math.floor(Math.random() * 60) + 40;
   const barHTML = `
     <div class="skill-row">
@@ -211,15 +211,28 @@ export async function cmdCoffee() {
       <span class="skill-pct">${level}%</span>
     </div>`;
   await printLine(barHTML, { isHTML: true });
-  await printLine(level > 70 ? 'Status: MAXIMUM PRODUCTIVITY' : 'Status: Need refill...', {
+  await printLine(level > 70 ? 'Status: Caffeinated and pixel-pushing' : 'Status: Need refill...', {
     className: level > 70 ? 'line-success' : 'line-accent',
   });
+  await printLine('Daily intake: Yes', { className: 'line-muted' });
 }
 
 export async function cmdFigma() {
-  await printLine('Redirecting to where I actually live...', { className: 'line-muted' });
-  await wait(500);
-  await printLine('Just kidding. But Figma is pretty great.', { className: 'line-success' });
+  const figmaArt = `
+  ┌───────────────────────────────┐
+  │ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ │
+  │ ▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒ │
+  │ ▒▒░░██████████████░░░░░░▒▒ │
+  │ ▒▒░░██████████████░░░░░░▒▒ │
+  │ ▒▒░░██████████████░░░░░░▒▒ │
+  │ ▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒ │
+  │ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ │
+  └───────────────────────────────┘
+  `;
+  await printLine(figmaArt, { className: 'line-accent' });
+  await printLine('<span class="line-success">I live here. Send help.</span>', { isHTML: true });
+  await printLine('Current tab count: ∞', { className: 'line-muted' });
+  await printLine('Unsaved changes: always', { className: 'line-muted' });
 }
 
 export async function cmdKonami() {
